@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="player">
+        <div class="song">
+            <div class="song-image"></div>
+            <div class="song-name-container">
+                <div class="about">
+                    <h1 class="song-author">Bensound</h1>
+                    <button class="like"></button>
+                </div>    
+                <p class="song-name">Push Play</p>
+                
+            </div>
+            <div class="audio-player">
+                <audio id='1' src="./assets/audio/1.mp3"></audio>
+                <div class="timeline">
+                    <div class="progress"><div class="circle"></div></div>
+                </div>
+                <div class="song-desc">
+                    <div class="controls">
+                        <div class="backward"></div>
+                        <div class="play" id="0"></div>
+                        <div class="forward"></div>
+                    </div>
+                    <p class="song-playing">&#129044; Push Play</p>
+                    <p class="time"><span class="now">00:00</span>&nbsp;/&nbsp;<span class="duration">00:00</span></p>
+                    <div class="sound"></div>
+                </div>                
+            </div>
+        </div>         
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <p><a href="https://github.com/yellographics">My Github</a></p>
+            <p>© 2022</p>
+            <a href="https://rs.school/js-stage0/"><img width="100px" height="50px" src="assets/svg/rs_school_logo.svg" alt="RS-School-logo"></a>
+        </div>
+    </footer>    
+    <script src="index.js"></script>
+</body>
+</html>
